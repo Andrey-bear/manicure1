@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manicure</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <h1 class="visually-hidden">Салон красоты</h1>
+      <button class="page-header__toggle page-header__toggle--opened page-header__toggle--nojs" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--index" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--index" href="price.html">Прайс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--index" href="catalog.html">Каталог</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--index main-nav__link--active">Записаться</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <div class="container">
+        <h1 class="main-header">Записаться</h1>
+      </div>
+      <section class="questionnaire">
+        <h2 class="visually-hidden">Анкета</h2>
+        <form class="questionnaire__form form" action="https://echo.htmlacademy.ru" method="GET">
+          <div class="form__fieldset-changes">
+            <fieldset class="form__fieldset fields">
+              <div class="form__fieldset-wrapper form__fieldset-wrapper--changes-form container">
+                <ul class="fields__list">
+                  <li class="fields__item fields__item--info">
+                    <label class="fields__label" for="form-name">Имя:</label>
+                    <input class="fields__input" type="text" id="form-name" name="name" value="Кятя" required>
+                  </li>
+                  <li class="fields__item fields__item--info">
+                    <label class="fields__label" for="form-services">Вид услуг:</label>
+                    <input class="fields__input" type="text" id="form-services" name="services" value="Укрепление ногтей" required>
+                  </li>
+                  <li class="fields__item fields__item--info">
+                    <label class="fields__label" for="form-time">Желаемые дата и время:</label>
+                    <input class="fields__input" type="text" id="form-time" name="time" value="1/01/23 14:00" required>
+                  </li>
+                  <li class="fields__item fields__item--info">
+                    <label class="fields__label" for="form-phone">контактный телефон:</label>
+                    <input class="fields__input" type="text" id="form-phone" name="phone" value="+7XXXXXXXXXX" required>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+            <div class="form__block-button">
+              <button  class="form__button button container" type="submit">Подать заявку на запись</button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__contacts contacts">
+        <a class="contacts__link" href="tel:+79617373039">+7 961 737-30-39</a>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="vkontakte">vkontakte</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="instagram">instagram</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="telegram">telegram</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+</body>
+</html>
